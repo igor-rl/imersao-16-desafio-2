@@ -3,9 +3,7 @@ version: "3.5"
 services:
   api:
     container_name: nestjs
-    build:
-      context: ./docker/
-      dockerfile: Dockerfile
+    build: .
     tty: true
     entrypoint: ["sh", "./docker/entrypoint.sh"]
     ports:
